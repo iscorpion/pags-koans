@@ -36,4 +36,6 @@ Primeiro aprendemos a somar para depois iterar. A ordem recomendada de exercíci
 4. inputs_usuario
 5. tipo_string
 6. lacos
-7. soma_inteiros_avancado
+7. listas
+8. soma_inteiros_avancado
+9. dicionarios

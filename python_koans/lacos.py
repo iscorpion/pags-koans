@@ -24,6 +24,10 @@ def imprimir_impares():
 def calcular_total(array):
     pass
 
+# Dados uma lista e um número, contar as vezes que o número aparece na lista e retornar a contagem
+def contagem_numero(lista, numero):
+    pass
+
 # Recebendo um array de números, calcule a soma dos números pares
 def total_pares(array):
     pass

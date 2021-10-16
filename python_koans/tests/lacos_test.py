@@ -31,6 +31,15 @@ def testar_calcular_total():
     assert res == 6
     assert lacos.calcular_total([]) == 0
 
+
+def testar_contagem_numero():
+    contagem = lacos.contagem_numero([1, 5, 2, 4, 1], 1)
+    assert contagem != None, "Método não implementado"
+    assert contagem == 2
+
+    assert lacos.contagem_numero([1, 2, 3], 4) == 0
+    assert lacos.contagem_numero([], 1) == 0
+
 def testar_total_pares():
     res = lacos.total_pares([2, 2, 2])
     assert res != None, "Método não implementado."
