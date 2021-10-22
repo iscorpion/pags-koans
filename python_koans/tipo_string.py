@@ -8,6 +8,7 @@ def definir_string_preenchida():
 
 # Com base na string já declarada, adicione os caracteres 'fgh' à essa string
 def concatenar():
+    string = "abcd"
     pass
 
 # Remover os caracteres "fgh" da string definida. Dica: use replace
