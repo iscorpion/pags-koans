@@ -16,26 +16,17 @@ pip install -r requirements.txt
 ```
 
 ### Desenvolvimento
-É recomendado utilizar uma IDE para o desenvolvimento dos exercícios, como o Visual Studio Code ou PyCharm. O objetivo é alterar os arquivos `.py` e implementar as lógicas de maneira correta, e em seguida utilizar os testes para validar se o algoritmo está correto. Os testes são definidos na pasta `tests`, porém **não deverão ser alterados**, apenas utilizados na execução como gabarito de respostas.
+É recomendado utilizar uma IDE para o desenvolvimento dos exercícios, como o Visual Studio Code ou PyCharm. O objetivo é alterar os arquivos `.py` e implementar as lógicas de maneira correta, e em seguida utilizar os testes para validar se o algoritmo está correto. Os testes são definidos no próprio arquivo do exercício, porém **não deverão ser alterados**, apenas utilizados na execução como gabarito de respostas.
 
 ### Execução
-A correção dos exercícios é feita através do `pytest`, o *framework* de testes do Python. Cada arquivo de exercício contém um teste equivalente, que pode ser passado para o `pytest` para execução mais específica.
+A correção dos exercícios é feita através do `pytest`, o *framework* de testes do Python. Cada arquivo de exercício contém cenários de teste, e podem ser validados pelo `pytest` individualmente.
 
 Exemplo da dinâmica:
-Abra o arquivo `soma_inteiros.py`. Nele, existe um método implementado, e um método com `pass`, que indica que o método não faz nada. A ideia é implementar a lógica da função `def somar(a, b)`, e em seguida, rodar o teste correspondente para correção, conforme comando.
+Abra o arquivo `0_soma_inteiros.py`. Nele, existe um método implementado, e um método com `pass`, que indica que o método não faz nada. A ideia é implementar a lógica da função `def somar(a, b)`, e em seguida, rodar o teste correspondente para correção, conforme comando.
 ```sh
 pytest tests/soma_test.py
 ```
 O teste irá importar essa função e executar lógicas próprias de validação. Se for executado antes de implementado, apresentará erro referente.
 
 ## Ordem de Exercícios
-Primeiro aprendemos a somar para depois iterar. A ordem recomendada de exercícios é a seguinte:
-1. soma_inteiros
-2. tipos_basicos
-3. condicionais
-4. inputs_usuario
-5. tipo_string
-6. lacos
-7. listas
-8. soma_inteiros_avancado
-9. dicionarios
+Primeiro aprendemos a somar para depois iterar. Cada módulo é numerado, e os exercícios possuem uma ordem sugerida no ínicio do nome do arquivo.
