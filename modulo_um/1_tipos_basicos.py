@@ -1,29 +1,29 @@
-# Receba dois inteiros e realize a soma entre eles
 def somar_inteiros(a: int, b: int) -> int:
+    """ Receba dois inteiros e realize a soma entre eles """
     pass
 
-# Utilize a subtração para encontrar a diferença entre os inteiros
 def subtrair_inteiros(a: int, b: int) -> int:
+    """ Utilize a subtração para encontrar a diferença entre os inteiros """
     pass
 
-# Multiplique dois inteiros
 def multiplicar_inteiros(a: int, b: int) -> int:
+    """ Multiplique dois inteiros """
     pass
 
-# Implemente a divisão entre inteiros. Obs: O resultado deve ser inteiro!
 def divisao_inteiros(a: int, b: int) -> int:
+    """ Implemente a divisão entre inteiros. Obs: O resultado deve ser inteiro! """
     pass
 
-# Retornar o primeiro número elevado à potencia do segundo
 def potencia(a: int, b: int):
+    """ Retornar o primeiro número elevado à potencia do segundo """
     pass
 
-# Receber um número inteiro e uma taxa (0 a 1). Multiplicar e arredondar para duas casas decimais
 def percentual(numero: int, taxa: float) -> float:
+    """ Receber um número inteiro e uma taxa (0 a 1). Multiplicar e arredondar para duas casas decimais """
     pass
 
-# Implemente a divisão entre dois numeros. Se decimal, o resultado deve ter duas casas decimais
 def divisao_completa(a, b):
+    """ Implemente a divisão entre dois numeros. Se decimal, o resultado deve ter duas casas decimais """
     pass
 
 

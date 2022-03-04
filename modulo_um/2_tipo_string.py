@@ -1,42 +1,58 @@
-# Declare uma string vazia e a retorne
-def definir_string_vazia():
+def definir_string_vazia() -> str:
+    """ Declare uma string vazia e a retorne """
     pass
 
-# Similar ao anterior, defina uma string, mas preenchida
-def definir_string_preenchida():
+def definir_string_preenchida() -> str:
+    """ Defina uma string qualquer e a retorne """
     pass
 
-# Com base na string já declarada, adicione os caracteres 'fgh' à essa string
-def concatenar():
-    string = "abcd"
+def concatenar() -> str:
+    """ Com base na string já declarada, adicione os caracteres 'fgh' e retorne o resultado """
+    string = "abcd" # Não alterar
     pass
 
-# Remover os caracteres "fgh" da string definida. Dica: use replace
-def remover():
+def remover() -> str:
+    """ Remover os caracteres "fgh" da string definida. Dica: use replace """
+    string = "abcdfgh" # Não alterar
     pass
 
-# Contar o número de espaços em uma string. Ex: "a b c" retorna 2
-def contar_espacos(str):
+def contar_espacos(string: str) -> int:
+    """ 
+    Contar o número de espaços em uma string. 
+        Ex: contar_espacos("a b c") retorna 2 
+    """
     pass
 
-# Receba duas strings e diga se elas são iguais, mas de maneira que seja igonorada a caixa alta ou baixa. Ex: "abba" == "abba" e "carro" == "CARRO"
-def igualdade_ignore_case(str_1, str_2):
+def igualdade_ignore_case(str_1: str, str_2: str):
+    """ 
+    Receba duas strings e diga se elas são iguais de maneira que seja igonorada a caixa alta ou baixa. 
+        Ex: "abba" == "abba"; "carro" == "CARRO"; "trIO" == "TRio"
+    """
     pass
 
-# Receba duas strings, e verifique a segunda está contida na primeira
-def substring(a, b):
+def substring(a: str, b: str) -> bool:
+    """ Receba duas strings, e verifique a segunda está contida na primeira """
     pass
 
-# Receba uma string e remova os espaços desnecessários. Ex: "   string    " passa para "string"
-def remover_espacos(str):
+def remover_espacos(string: str) -> str:
+    """
+     Receba uma string e remova os espaços desnecessários. 
+        Ex: "   string    " passa para "string"
+     """
     pass
 
-# Receba uma string e retorne se ela é um número. Ex: "123" is True; "ABBC" is False
-def eh_numerico(str):
+def eh_numerico(string: str):
+    """ 
+    Receba uma string e retorne se ela é um número. 
+        Ex: "123" is True; "ABBC" is False
+    """
     pass
 
-# Receba uma linha de um arquivo csv (campos separados por ;) e separe os campos individualmente. Ex: "Campo1;Campo2;Campo3" vira ["Campo1", "Campo2", "Campo3"]
-def linha_csv(str):
+def linha_csv(string: str) -> list:
+    """ 
+    Receba uma linha de um arquivo csv (campos separados por ;) e separe os campos individualmente. 
+        Ex: "Campo1;Campo2;Campo3" -> ["Campo1", "Campo2", "Campo3"]
+    """
     pass
 
 
