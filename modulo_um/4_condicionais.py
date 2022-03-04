@@ -1,31 +1,31 @@
 
-# Receba um número, imprima "Par" se ele for par, senão "Ímpar"
-def par_impar(x):
+def par_impar(num: int) -> str:
+    """ Receba um número, retorne "Par" se ele for par, senão "Ímpar" """
     pass # Complete aqui
 
 
-# Receba um número, imprima "Positivo" se ele for maior que zero, "Negativo" se for menor, e "Nulo" se for zero
-def positivo_negativo_nulo(x):
+def positivo_negativo_nulo(num: int) -> str:
+    """ Receba um número, retorne "Positivo" se ele for maior que zero, "Negativo" se for menor, e "Nulo" se for zero """
     pass # Complete aqui
 
 
-# Receba uma string e verifique se ela é igual a "banana". Retorne o valor boolean (True ou False)
-def igualdade(str):
+def igualdade(string: str) -> bool:
+    """ Receba uma string e verifique se ela é igual a "banana". Retorne o valor boolean (True ou False) """
     pass # Complete aqui
 
 
-# Recebendo uma string, diga se ela é 'Vazia' (utilize condição com 'not') ou 'Preenchida'
-def negacao(str):
+def negacao(string: str) -> str:
+    """ Recebendo uma string, diga se ela é 'Vazia' (utilize condição com 'not') ou 'Preenchida' """
     pass # Complete aqui
 
 
-# Receba dois números, e retorne se ambos são maiores que zero
-def and_logico(a, b):
+def and_logico(a, b) -> bool:
+    """ Receba dois números, e retorne se ambos são maiores que zero """
     pass # Complete aqui
 
 
-# Receba um número, e diga se ele é divisível por 2 ou 3
-def or_logico(a):
+def or_logico(a) -> bool:
+    """ Receba um número, e diga se ele é divisível por 2 ou 3 """
     pass # Complete aqui
 
 

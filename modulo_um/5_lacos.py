@@ -1,53 +1,60 @@
 # Exercícios sobre laços. Utilize sempre o FOR, desde que não especificado o contrário
 
-# Utilizando um laço e a função range, imprima os números de 0 a 10
-def imprimir_range():
+def imprimir_range() -> None:
+    """ Utilizando um laço e a função range, imprima os números de 0 a 10 """
     pass
 
-# Utilizando um laço, imprima os caracteres de uma string
-def imprimir_string(str):
+def imprimir_string(string: str) -> None:
+    """ Utilizando um laço, imprima os caracteres de uma string """
     pass
 
-# Repita o exercício anterior, mas utilize o operador de indexação x[0]. Dica: use a função len() para descobrir o tamanho de uma string
-def imprimir_string_indexacao(str):
+def imprimir_string_indexacao(string: str) -> None:
+    """ Repita o exercício anterior, mas utilize o operador de indexação x[0]. Dica: use a função len() para descobrir o tamanho de uma string """
     pass
 
-# Utilizando laço e range, imprima os números de 0 a 20 de 2 em 2
-def imprimir_pulando():
+def imprimir_pulando() -> None:
+    """ Utilizando laço e range, imprima os números de 0 a 20 de 2 em 2 """
     pass
 
-# Imprima os números ímpares de 0 a 20
-def imprimir_impares():
+def imprimir_impares() -> None:
+    """ Imprima os números ímpares de 0 a 20 """
     pass
 
-# Recebendo um array de números, calcule e retorne a soma total utilizando um laço
-def calcular_total(array):
+def calcular_total(array: list):
+    """ Recebendo um array de números, calcule e retorne a soma total utilizando um laço """
     pass
 
-# Dados uma lista e um número, contar as vezes que o número aparece na lista e retornar a contagem
-def contagem_numero(lista, numero):
+def contagem_numero(lista: list, numero) -> int:
+    """ Dados uma lista e um número, contar as vezes que o número aparece na lista e retornar a contagem """
     pass
 
-# Recebendo um array de números, calcule a soma dos números pares
-def total_pares(array):
+def total_pares(array: list):
+    """ Recebendo um array de números, calcule a soma dos números pares """
     pass
 
-# Dado um array, encontre e retorne o menor número (não utilizar min())
 def numero_minimo(numeros):
+    """ Dado um array, encontre e retorne o menor número (não utilizar min()) """
     pass
 
-# Dado um array, encontre e retorne o maior número (não utilizar max())
 def numero_maximo(numeros):
+    """ Dado um array, encontre e retorne o maior número (não utilizar max()) """
     pass
 
-# Recebendo váris notas de alunos, classifique-os entre "APROVADO" se a média for maior do que 6, "RECUPERAÇÃO" se entre 5 e 6, e "REPROVADO" se menor do que 5
-def medias_alunos(notas):
+def medias_alunos(notas) -> None:
+    """ 
+    Recebendo várias notas de alunos, classifique-os entre 
+    "APROVADO" se a média for maior do que 6, "RECUPERAÇÃO" se entre 5 e 6, e "REPROVADO" se menor do que 5 
+    """
     pass
+
+# Desafio!   
+def bubble_sort(numeros: int) -> int:
+    """ 
+    Recebendo um array de inteiros, ordene os números de maneira crescente. Para referências, pesquisar por "bubble sort"
     
-# Desafio: recebendo um array de inteiros, ordene os números de maneira crescente. Para referências, pesquisar por "bubble sort"
-# Dica: troca entre valores (swap) no Python:
-#   a, b = b, a
-def bubble_sort(numeros):
+    Dica: troca entre valores (swap) no Python:
+            a, b = b, a
+    """
     pass
 
 

@@ -1,46 +1,51 @@
 # Exercícios utilizando a estrutura Dicionario do Python
 
 
-# Adicione a nova chave "Classe": "9A", e imprima o dicionario
-def adicionar_registro():
+def adicionar_registro() -> None:
+    """ Adicione a nova chave "Classe": "9A", e imprima o dicionario """
     aluno = {
         "Nome": "Ana",
         "Nota": "9.5"
     }
     pass
 
-# Recebendo uma lista de alunos, calcule a média da sala. Considere que os alunos são representados da seguinte maneira:
-# {"Aluno": "Fulano", "Nota": 10.0}
-def media_alunos(alunos):
+def media_alunos(alunos: list) -> float:
+    """ 
+    Recebendo uma lista de alunos, calcule a média da sala. Considere que os alunos são representados da seguinte maneira:
+        {"Aluno": "Fulano", "Nota": 10.0}
+    """
     pass
 
-# Recebendo um dicionario no formato { "Nome do Carro": valor }, retorne o carro com maior preço;
-# Ex.: {"Gol": 70000, "Mobi": 60000}, retornando "Gol"
-def maior_valor(carros):
+def maior_valor(carros: dict) -> str:
+    """ 
+    Recebendo um dicionario no formato { "Nome do Carro": valor }, retorne o nome do carro com maior preço;
+        Ex.: {"Gol": 70000, "Mobi": 60000}, retornando "Gol"
+    """
     pass
 
-# Recebendo uma string com caracteres, contabilizar os caracteres e sua contagem em um dicionario.
-# Ex: "AABBCCCD" -> {"A": 2, "B": 2, "C": 3, "D": 1}
-def contagem_caracteres(string):
+def contagem_caracteres(string: str) -> dict:
+    """ 
+    Recebendo uma string com caracteres, agrupar os caracteres e sua contagem em um dicionario.
+        Ex: "AABBCCCD" -> {"A": 2, "B": 2, "C": 3, "D": 1}
+    """
     pass
 
-# Transforme o json pre-definido em um dict
-def json_para_dict():
+def json_para_dict() -> dict:
+    """ Transforme o json pre-definido em um dict """
     payload = """
     {
         "customer": "CUSTOMER:12345",
         "person_type": "PF"
     }"""
+    pass
 
-    return None
-
-# Transforme o objecto Python em um JSON
-def dict_para_json():
+def dict_para_json() -> str:
+    """ Transforme o objeto Python em um JSON """
     dicionario = {
         "customer": "CUSTOMER:12345",
         "person_type": "PF"
     }
-    return None
+    pass
 
 
 
