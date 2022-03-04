@@ -24,7 +24,7 @@ A correção dos exercícios é feita através do `pytest`, o *framework* de tes
 Exemplo da dinâmica:
 Abra o arquivo `0_soma_inteiros.py`. Nele, existe um método implementado, e um método com `pass`, que indica que o método não faz nada. A ideia é implementar a lógica da função `def somar(a, b)`, e em seguida, rodar o teste correspondente para correção, conforme comando.
 ```sh
-pytest tests/soma_test.py
+pytest modulo_um/0_soma_inteiros.py
 ```
 O teste irá importar essa função e executar lógicas próprias de validação. Se for executado antes de implementado, apresentará erro referente.
 
