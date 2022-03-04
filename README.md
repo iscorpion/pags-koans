@@ -30,3 +30,5 @@ O teste irá importar essa função e executar lógicas próprias de validação
 
 ## Ordem de Exercícios
 Primeiro aprendemos a somar para depois iterar. Cada módulo é numerado, e os exercícios possuem uma ordem sugerida no ínicio do nome do arquivo.
+
+**Módulo Um** - Sintaxe básica e lógica de programação
