@@ -27,7 +27,7 @@ Com base na estrutura já definida `Node` e `LinkedList`, os seguintes métodos 
 
 - `def __str__(self) -> str:`
 
-        Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
+    Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
 
 - `def adicionar_varios(self, valores: list) -> None:`
 
