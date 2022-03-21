@@ -17,7 +17,8 @@ ________________          _______________               ____
 Com base na estrutura já definida `Node` e `LinkedList`, os seguintes métodos deverão ser implementados:
 
 - `def adicionar_ao_final(self, value: int) -> None:`
-Recomendado iniciar pela implementação deste método. Será necessário adicionar novos valores à lista ligada. Caso já existam valores, o novo valor deverá ser adicionado ao final. Exemplo:
+    
+    Recomendado iniciar pela implementação deste método. Será necessário adicionar novos valores à lista ligada. Caso já existam valores, o novo valor deverá ser adicionado ao final. Exemplo:
     ```python
         lista = 0 -> 1 -> 2
         lista.adicionar_ao_final(3)
@@ -25,10 +26,12 @@ Recomendado iniciar pela implementação deste método. Será necessário adicio
     ```
 
 - `def __str__(self) -> str:`
-Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
+
+        Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
 
 - `def adicionar_varios(self, valores: list) -> None:`
-O método irá receber uma lista de inteiros, e deverá chamar o método `adicionar_ao_final`. Exemplo:
+
+    O método irá receber uma lista de inteiros, e deverá chamar o método `adicionar_ao_final`. Exemplo:
     ```python
         lista = 0
         lista.adicionar_varios([1, 2, 3, 4])
@@ -36,14 +39,16 @@ O método irá receber uma lista de inteiros, e deverá chamar o método `adicio
     ```
 
 - `def adicionar_ao_inicio(self, valor: int) -> None:`
-Criar um novo nó com o valor parametrizado, mas deverá se tornar o primeiro da lista. Exemplo:
+
+    Criar um novo nó com o valor parametrizado, mas deverá se tornar o primeiro da lista. Exemplo:
     ```python
         lista = 1 -> 2 -> 3 -> 4
         lista.adicionar_ao_inicio(0)
         lista = 0 -> 1 -> 2 -> 3 -> 4
     ```
 - `def remover_valor(self, value: int) -> None:`
-Remover a primeira incidência do valor passado como parâmetro. Exemplo:
+
+    Remover a primeira incidência do valor passado como parâmetro. Se o valor passado não for encontrado, não realizar nenhuma operação. Exemplo:
     ```python
         lista = 1 -> 2 -> 3 -> 3 -> 4
         lista.remover_valor(3)
