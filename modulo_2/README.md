@@ -17,7 +17,8 @@ ________________          _______________               ____
 Com base na estrutura já definida `Node` e `LinkedList`, os seguintes métodos deverão ser implementados:
 
 - `def adicionar_ao_final(self, value: int) -> None:`
-Recomendado iniciar pela implementação deste método. Será necessário adicionar novos valores à lista ligada. Caso já existam valores, o novo valor deverá ser adicionado ao final. Exemplo:
+    
+    Recomendado iniciar pela implementação deste método. Será necessário adicionar novos valores à lista ligada. Caso já existam valores, o novo valor deverá ser adicionado ao final. Exemplo:
     ```python
         lista = 0 -> 1 -> 2
         lista.adicionar_ao_final(3)
@@ -25,15 +26,21 @@ Recomendado iniciar pela implementação deste método. Será necessário adicio
     ```
 
 - `def __str__(self) -> str:`
+<<<<<<< HEAD
 Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido. Formato:
     ```
     Se n = 0, lista = ''
     Se n = 1, lista = 'valor_1'
     se n > 1, lista = 'valor_1 -> valor_2 -> ... -> valor_n'
     ```
+=======
+
+    Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
+>>>>>>> 3fe63ae4c4e28163e33d948982d20d86a7ab6e6a
 
 - `def adicionar_varios(self, valores: list) -> None:`
-O método irá receber uma lista de inteiros, e deverá chamar o método `adicionar_ao_final`. Exemplo:
+
+    O método irá receber uma lista de inteiros, e deverá chamar o método `adicionar_ao_final`. Exemplo:
     ```python
         lista = 0
         lista.adicionar_varios([1, 2, 3, 4])
@@ -41,14 +48,16 @@ O método irá receber uma lista de inteiros, e deverá chamar o método `adicio
     ```
 
 - `def adicionar_ao_inicio(self, valor: int) -> None:`
-Criar um novo nó com o valor parametrizado, mas deverá se tornar o primeiro da lista. Exemplo:
+
+    Criar um novo nó com o valor parametrizado, mas deverá se tornar o primeiro da lista. Exemplo:
     ```python
         lista = 1 -> 2 -> 3 -> 4
         lista.adicionar_ao_inicio(0)
         lista = 0 -> 1 -> 2 -> 3 -> 4
     ```
 - `def remover_valor(self, value: int) -> None:`
-Remover a primeira incidência do valor passado como parâmetro. Exemplo:
+
+    Remover a primeira incidência do valor passado como parâmetro. Se o valor passado não for encontrado, não realizar nenhuma operação. Exemplo:
     ```python
         lista = 1 -> 2 -> 3 -> 3 -> 4
         lista.remover_valor(3)
@@ -56,6 +65,7 @@ Remover a primeira incidência do valor passado como parâmetro. Exemplo:
         lista.remover_valor(8)
         lista = 1 -> 2 -> 3 -> 4
     ```
+<<<<<<< HEAD
     
 ## Exercício 2 - Fila 
 A fila é uma estrutura de dados que segue a regra de inserção e remoção FIFO (First In, First Out). É versátil na forma de implementação, podendo ser representada na forma de listas estáticas ou listas ligadas, desde que seja garantido o comportamento característico.
@@ -104,3 +114,5 @@ Representação da pilha como string. Será necessário percorrer todos os eleme
 Retorna o número de elementos empilhados. O retorno sempre será inteiro.
 
 
+=======
+>>>>>>> 3fe63ae4c4e28163e33d948982d20d86a7ab6e6a
