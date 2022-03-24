@@ -25,7 +25,12 @@ Recomendado iniciar pela implementação deste método. Será necessário adicio
     ```
 
 - `def __str__(self) -> str:`
-Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido.
+Representação da lista ligada como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido. Formato:
+    ```
+    Se n = 0, lista = ''
+    Se n = 1, lista = 'valor_1'
+    se n > 1, lista = 'valor_1 -> valor_2 -> ... -> valor_n'
+    ```
 
 - `def adicionar_varios(self, valores: list) -> None:`
 O método irá receber uma lista de inteiros, e deverá chamar o método `adicionar_ao_final`. Exemplo:
@@ -51,3 +56,51 @@ Remover a primeira incidência do valor passado como parâmetro. Exemplo:
         lista.remover_valor(8)
         lista = 1 -> 2 -> 3 -> 4
     ```
+    
+## Exercício 2 - Fila 
+A fila é uma estrutura de dados que segue a regra de inserção e remoção FIFO (First In, First Out). É versátil na forma de implementação, podendo ser representada na forma de listas estáticas ou listas ligadas, desde que seja garantido o comportamento característico.
+
+### Objetivo
+A classe `Fila` e a assinatura dos métodos principais estão definidas. Fica ao critério do praticante a escolha de representação dos elementos, tendo liberdade de criar novos atributos, construtor e métodos na classe.
+- `enfileirar`
+Como característico de filas, os novos elementos deverão ser colocados ao final da fila. O método não possui retorno.
+- `enfileirar_varios`
+Utilizar o método `enfileirar` para inserir vários elementos. Manter a ordem FIFO. O método não possui retorno.
+- `desenfileirar`
+Remover o elemento mais prioritário da fila. Seguindo a ordem FIFO, deve-se remover o primeiro elemento. Retornar o valor do elemento removido.
+- `proximo`
+Retornar o elemento mais prioritário da fila. Pela ordem FIFO, retornar o primeiro elemento. Note que ele deve continuar presente na fila.
+- `__str__`
+Representação da fila como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido. Formato:
+    ```
+    Se n = 0, fila = ''
+    Se n = 1, fila = '[valor_1]'
+    se n > 1, fila = '[valor_1, valor_2, ..., valor_n]'
+    ``` 
+- `__len__`
+Retorna o número de elementos enfileirados. O retorno sempre será inteiro.
+
+## Exercício 3 - Pilha
+A pilha é uma estrutura de dados que segue a regra de inserção e remoção LIFO (Last In, First Out). Serve como uma estrutura com o comportamento inverso ao da fila.
+
+### Objetivo
+A classe `Pilha` e a assinatura dos métodos principais estão definidas. Fica ao critério do praticante a escolha de representação dos elementos, tendo liberdade de criar novos atributos, construtor e métodos na classe.
+- `empilhar`
+Como característico de pilhas, os novos elementos deverão ser colocados ao final da pilha. O método não possui retorno.
+- `empilhar`
+Utilizar o método `empilhar` para inserir vários elementos. Manter a ordem LIFO. O método não possui retorno.
+- `desempilhar`
+Remover o elemento mais prioritário da pilha. Seguindo a ordem LIFO, deve-se remover o último elemento. Retornar o valor do elemento removido.
+- `proximo`
+Retornar o elemento mais prioritário da pilha. Pela ordem LIFO, retornar o último elemento. Note que ele deve continuar presente na pilha.
+- `__str__`
+Representação da pilha como string. Será necessário percorrer todos os elementos da lista e imprimi-los no formado definido. Formato:
+    ```
+    Se n = 0, pilha = ''
+    Se n = 1, pilha = '[valor_1]'
+    se n > 1, pilha = '[valor_1, valor_2, ..., valor_n]'
+    ``` 
+- `__len__`
+Retorna o número de elementos empilhados. O retorno sempre será inteiro.
+
+
