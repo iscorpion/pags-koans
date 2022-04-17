@@ -120,3 +120,33 @@ A classe `Pilha` e a assinatura dos métodos principais estão definidas. Fica a
 - `__len__`
 
     Retorna o número de elementos empilhados. O retorno sempre será inteiro.
+
+
+## Exercício 4 - Mapa
+O mapa é uma estrutura que possui chaves com valores correspondentes, e não permite chaves duplicadas. É muito utilizado em bancos não-relacionais e no desenvolvimento Web na forma de JSON.
+
+### Objetivo
+A classe `Mapa` e a assinatura dos métodos principais já estão definidas. Fica ao critério do praticante a escolha de representação das chaves e dos valores, tendo liberdade de criar novos atributos, construtor e métodos na classe. Para o excercício, as chaves passadas sempre serão strings.
+- `__setitem__`
+
+    O método `setitem` permite que seja utilizado o operador `[]` em uma classe criada pelo programador. Nesse caso, será passada a string representando a chave, recebendo um valor específico.
+    ```
+    mapa["Nome"] = "João"
+    ```
+
+    Se a chave utilizada for uma chave já existente, deve-se reescrever o valor.
+- `__getitem__`
+
+    O método `getitem` permite utilizar o operador `[]` para acessar elementos específicos. Nesse caso, será passado o valor da chave, retornando o valor do elemento correspondente.
+    ```
+    mapa["Nome"]
+    > "João"
+    ```
+    Se for tentado acessar o valor de uma chave que não existe, lançar uma `KeyError`.
+- `__str__`
+
+    Representação do mapa como uma string. Para simplicidade, sempre envolver as chaves e elemtos com aspas simples (`'`), mesmo que sejam objetos como listas ou dicionários.
+    ```
+    print(mapa)
+    {'Nome': 'João', 'Pais': '{'Mae': 'Joana', 'Pai': 'João Sr.'}', 'Hobbies': '['Games', 'Música']'}
+    ```
