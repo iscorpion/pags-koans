@@ -76,3 +76,4 @@ def testar_or_logico():
     assert res is True
     assert or_logico(7) is False
     assert or_logico(6) is True
+    assert or_logico(9) is True
