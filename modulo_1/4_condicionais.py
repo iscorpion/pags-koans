@@ -39,8 +39,8 @@ def or_logico(a) -> bool:
 def testar_par_ou_impar():
     res = par_impar(0)
     assert res, "Método não implementado."
-    assert "Par", par_impar(2)
-    assert "Ímpar", par_impar(3)
+    assert "Par" == par_impar(2)
+    assert "Ímpar" == par_impar(3)
 
 def testar_positivo_negativo_nulo():
     res = positivo_negativo_nulo(0)
