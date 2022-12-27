@@ -43,7 +43,7 @@ def numero_maximo(numeros):
 def medias_alunos(notas) -> None:
     """ 
     Recebendo várias notas de alunos, classifique-os entre 
-    "APROVADO" se a média for maior do que 6, "RECUPERAÇÃO" se entre 5 e 6, e "REPROVADO" se menor do que 5 
+    "APROVADO" se a média for 6 ou mais, "RECUPERAÇÃO" se entre 5 e 6, e "REPROVADO" se menor do que 5 
     """
     pass
 
@@ -127,9 +127,9 @@ def testar_numero_maximo():
     assert numero_maximo([5, 10, 8, 29, 523, 7]) == 523
 
 def testar_medias_alunos(capfd):
-    medias_alunos([7.8, 5.5, 4.9, 1.3, 9.6])
+    medias_alunos([7.8, 5.9, 4.9, 1.3, 9.6, 6.0, 5.0])
     out, err = capfd.readouterr()
-    assert out == "APROVADO\nRECUPERAÇÃO\nREPROVADO\nREPROVADO\nAPROVADO\n", "Valor incorreto."
+    assert out == "APROVADO\nRECUPERAÇÃO\nREPROVADO\nREPROVADO\nAPROVADO\nAPROVADO\nRECUPERAÇÃO\n", "Valor incorreto."
     
 def testar_bubble_sort():
     array = [1, 5, 8, 4, 3, 2, 3]
